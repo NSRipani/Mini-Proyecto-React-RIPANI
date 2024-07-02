@@ -1,7 +1,7 @@
-const ItemList = ({geeting}) => {
+const ItemList = ({consumidor}) => {
     return (
         <div>
-            <h1>{geeting}</h1>
+            <h2>Bienvenido, {consumidor}</h2>
         </div>
     )
 }

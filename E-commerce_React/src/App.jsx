@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
-      <ItemList geeting={"Bienvenido"} />
+      <NavBar />
+      <ItemList consumidor={"Nicolas S. Riapni"} />
     </>
   )
 }
