@@ -1,0 +1,16 @@
+.container{
+    background-color: rgba(116, 142, 183, 0.523);
+    text-align: center;
+    justify-content: center; 
+}
+
+#err404 {
+    padding: 3rem;
+    width: 50rem;
+    height: 50rem;
+}
+
+.container .parrafo{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}

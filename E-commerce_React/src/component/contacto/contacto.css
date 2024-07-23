@@ -1,0 +1,62 @@
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,185,170,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 8px;
+    border: 0.5rem solid black;
+    box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.contact-container h1 {
+    text-align: start;
+    font-size: x-large;
+    color: white;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+}
+
+.contact-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white; 
+    width: 100%;
+    text-align: left;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    width: 95%;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #fff; 
+    outline: none;
+}
+
+.contact-container button {
+    padding: 10px;
+    background-color: #0056b3; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Asegura que el botón ocupe el ancho completo */
+}
+
+.contact-container button:hover {
+    background-color: #004494; 
+}

@@ -1,0 +1,45 @@
+.nav {
+    background: linear-gradient(90deg, rgba(2,0,36,1)0%,rgba(72,185,170,1)100%,rgba(0,212,2551,1)100%); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+.nav .img-title .contro-comercial-conteiner{
+    /* justify-content: center; */
+    font-size: 1rem;
+    /* align-items: center; */
+    text-align: center;
+
+}
+.nav .img-title #titulo-ecommerse {
+    /* width: 1px; */
+    color: #ffffff;
+    margin: 0;
+    font-size: 0.5rem;
+}
+ul{
+    display: flex;
+    gap: 100px;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    font-weight: 500;
+    font-family: inherit;
+    color: #010771;
+    text-decoration:none;
+}
+a:hover {
+    color: #6669ac;
+}
+
+/* img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+} */

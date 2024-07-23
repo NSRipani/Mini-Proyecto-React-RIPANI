@@ -1,0 +1,32 @@
+
+.filter-container {
+    padding: 0.625rem;
+    border-bottom: 0.0625rem solid #ccc; 
+    background-color: #f9f9f9;
+}
+
+.filter-container #h2 {
+    font-size: 1.5rem; 
+    margin: auto; 
+    color: #333;
+}
+
+.filter-container select {
+    width: 15%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #007bff; 
+    border-radius: 0.3125rem; 
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.filter-container select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.filter-container option {
+    padding: 0.625rem;
+}

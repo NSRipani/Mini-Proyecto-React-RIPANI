@@ -1,0 +1,19 @@
+.lista-productos{
+    display: grid;
+    padding: 2rem 10rem;
+    background-color: #e9ecef;
+    /* background-color: rgb(255, 174, 0); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+}
+.lista-productos .Cart{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -21,23 +21,26 @@ body {
   padding: 0;
 }
 
-nav {
-  background-color: #6aa34f;
+/* nav {
+  /* background-color: #6aa34f; *
+  /* background: rgb(02, 0, 36); 
+  background: linear-gradient(90deg, rgba(2,0,36,1)0%,rgba(72,185,170,1)100%,rgba(0,212,2551,1)100%);
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 5rem;
   align-items: center;
 }
 
 h1 {
   margin: 0;
   font-size: 1rem;
-  color: #000000;
-}
+  color: #ffffff;
+} */
 
-ul{
+/* ul{
   display: flex;
-  gap: 30px;
+  gap: 100px;
+  padding: 0;
 }
 
 li{
@@ -58,7 +61,7 @@ img {
   width: 2rem;
   height: 2rem;
   margin-right: 10px;
-}
+} */
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
