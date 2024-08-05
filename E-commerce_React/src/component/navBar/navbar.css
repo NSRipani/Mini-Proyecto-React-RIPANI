@@ -1,45 +1,38 @@
 .nav {
-    background: linear-gradient(90deg, rgba(2,0,36,1)0%,rgba(72,185,170,1)100%,rgba(0,212,2551,1)100%); 
+    background: linear-gradient(90deg, rgb(11, 6, 122)0%,rgb(73, 187, 172)100%,rgba(0,212,2551,1)100%); 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
 }
 .nav .img-title .contro-comercial-conteiner{
-    /* justify-content: center; */
     font-size: 1rem;
-    /* align-items: center; */
     text-align: center;
 
 }
 .nav .img-title #titulo-ecommerse {
-    /* width: 1px; */
     color: #ffffff;
     margin: 0;
     font-size: 0.5rem;
 }
-ul{
+.nav ul{
     display: flex;
-    gap: 100px;
+    gap: 200px;
     padding: 0;
 }
 
-li{
+nav ul li{
     list-style: none;
 }
 
-a {
+nav ul li a {
     font-weight: 500;
     font-family: inherit;
-    color: #010771;
+    color: #000000;
     text-decoration:none;
+    cursor: pointer;
 }
-a:hover {
-    color: #6669ac;
+nav ul li a:hover {
+    color: #5b61b2;
 }
 
-/* img {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 10px;
-} */

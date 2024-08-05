@@ -2,10 +2,10 @@
     font-size: 1.2rem;
     font-weight: bold; 
     color: #333; 
-    margin:auto; 
     line-height: 1.2; 
     background-color: #f9f9f9;
 }
 .Conteiner-listItem #title{
-    padding: 0.5rem 1rem; 
+    margin: auto; 
+    padding: 0.5rem;
 }

@@ -1,35 +1,57 @@
-import { useState } from "react"
-import './botones.css'
+import { useState } from "react";
+import './botones.css';
+import Swal from 'sweetalert2';
 
-const Botones = () => {
+const Botones = ({saveProd}) => {
     const [count, setCount] = useState(0);
 
     const handleIncrement = () => {
         setCount(count + 1);
-    }
+    };
 
     const handleDecrement = () => {
         if (count > 0) {
             setCount(count - 1);
         }
-    }
-
+    };
+    
     const handleAddToCart = () => {
-    // Agrega la lógica para agregar el producto al carrito
-        console.log('Producto agregado al carrito');
-    }
-    return(
-            <div className="Contenedor">
-                <div className="Botonera">
-                    <button className="Boton" onClick={handleIncrement}> + </button>
-                    <h4 className="Cantidad" onClick={handleAddToCart}>{count}</h4>
-                    <button className="Boton" onClick={handleDecrement}> - </button>
-                </div>
-                <div className="btn-carrito">
-                    <button>AGREGAR AL CARRITO</button>
-                </div>
-            </div>
-        )
+        if (count === 0) {
+            return;
+        }
+        saveProd(count)
+        setCount(0)
+
+        // Muestra la alerta de SweetAlert
+        Swal.fire({
+            title: 'Producto agregado!',
+            text: `Has agregado ${count} producto(s) al carrito.`,
+            icon: 'success',
+            customClass: {
+                title: 'sweetalert-title',
+                content: 'sweetalert-content',
+                confirmButton: 'sweetalert-button'
+            },
+            background: '#333',
+            color: '#fff', 
+            buttonsStyling: false
+        });
     }
 
-export default Botones
+    return (
+        <div className="Contenedor">
+            <div className="Botonera">
+                <button id="Boton" onClick={handleDecrement}> - </button>
+                <h4 id="Cantidad">{count}</h4>
+                <button id="Boton" onClick={handleIncrement}> + </button>
+            </div>
+            <div className="btn-carrito">
+                <button onClick={handleAddToCart} disabled={count === 0}>
+                    AGREGAR AL CARRITO
+                </button>
+            </div>
+        </div>
+    );
+};
+
+export default Botones;

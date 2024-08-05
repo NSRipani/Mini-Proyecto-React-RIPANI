@@ -1,0 +1,101 @@
+.contenedor{
+    display: flex;
+}
+.Ordenes {
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #dedede; 
+}
+
+.Ordenes h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Ordenes form {
+    display: flex; 
+    flex-direction: column;
+}
+
+.Ordenes div {
+    margin-bottom: 15px;
+}
+
+.Ordenes label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.Ordenes input {
+    padding: 10px;
+    border: 1px solid #c222cc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: -webkit-fill-available;
+    background-color: white;
+    color: black;
+}
+
+.Ordenes input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.Ordenes button {
+    padding: 10px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.Ordenes button:hover {
+    background-color: #0056b3;
+}
+
+.Ordenes button:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+}
+
+.sweetalert-title {
+    font-size: 1.8rem; 
+    color: #4CAF50; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.sweetalert-content {
+    font-size: 1.2rem;
+    color: #ddd;
+    text-align: center;
+    margin: 10px 0; 
+}
+
+.sweetalert-button {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sweetalert-button:hover {
+    background-color: #45a049;
+}
+
+.swal2-popup {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

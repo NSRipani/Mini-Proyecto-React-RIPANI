@@ -1,51 +1,65 @@
-.contact-container {
-    max-width: 600px;
-    margin: 20px auto; 
+.fondo-conteiner{
+    background-color: #f9f9f9;
+    margin: auto;
+    align-items: center;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+
+}
+.fondo-conteiner .contact-container {
+    max-width: 40rem;
+    /* margin: 20pxuto;  */
     padding: 20px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,185,170,1) 100%, rgba(0,212,255,1) 100%);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,185,170,1) 100%, rgba(0,212,255,1) 100%); */
+    background-color: #dedede;
     border-radius: 8px;
-    border: 0.5rem solid black;
+    border: 0.1rem solid black;
     box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
-.contact-container h1 {
+.fondo-conteiner .contact-container h1 {
     text-align: start;
     font-size: x-large;
-    color: white;
+    color: black;
+    margin: 0rem;
+    padding: 1rem 0rem;
 }
 
-.contact-container form {
+.fondo-conteiner .contact-container form {
     display: flex;
     flex-direction: column;
     align-items: stretch; 
 }
 
-.contact-container label {
+.fondo-conteiner .contact-container label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: white; 
+    color: black; 
     width: 100%;
     text-align: left;
 }
 
-.contact-container input,
-.contact-container textarea {
+.fondo-conteiner .contact-container input,
+.fondo-conteiner .contact-container textarea {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 0.1rem solid #c222cc;
     border-radius: 4px;
     transition: border-color 0.3s;
-    width: 95%;
+    width: 92%;
+    color: black; 
+    background-color: white;
 }
 
-.contact-container input:focus,
-.contact-container textarea:focus {
+.fondo-conteiner .contact-container input:focus,
+.fondo-conteiner .contact-container textarea:focus {
     border-color: #fff; 
     outline: none;
 }
 
-.contact-container button {
+.fondo-conteiner .contact-container button {
     padding: 10px;
     background-color: #0056b3; 
     color: white;
@@ -57,6 +71,39 @@
     width: 100%; /* Asegura que el botón ocupe el ancho completo */
 }
 
-.contact-container button:hover {
+.fondo-conteiner .contact-container button:hover {
     background-color: #004494; 
+}
+
+.sweetalert-title {
+    font-size: 1.8rem; 
+    color: #4CAF50; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.sweetalert-content {
+    font-size: 1.2rem;
+    color: #ddd;
+    text-align: center;
+    margin: 10px 0; 
+}
+
+.sweetalert-button {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sweetalert-button:hover {
+    background-color: #45a049;
+}
+
+.swal2-popup {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }

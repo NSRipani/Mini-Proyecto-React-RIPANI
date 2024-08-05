@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './filtro.css'
-const ProductFilter = ({ categories, onFilter }) => {
+
+const ProductFilter = ({ categories = [], onFilter }) => {
   const [seleccionarCategoria, setSeleccionarCategoria] = useState('');
 
   const handleCategoryChange = (event) => {

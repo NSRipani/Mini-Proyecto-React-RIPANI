@@ -3,6 +3,7 @@ import Carrito from "../img-carrito/carroImagen.jsx"
 import './navbar.css'
 
 const BarraNav = () => {
+   
     return (
         <nav className="nav">
             <div className="img-title">
@@ -27,7 +28,9 @@ const BarraNav = () => {
                     </li> 
                 </ul>
             </div>
-            <Carrito />
+            <Link to={"/carrito"}>
+                <Carrito />
+            </Link>
         </nav>
     )
 }

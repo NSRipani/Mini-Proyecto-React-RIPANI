@@ -1,11 +1,18 @@
+
 import carritoDeCompras from '../../assets/carritoDeCompras.png'
+import { useCarroContext } from '../context/context'
 import './carroImagen.css'
 
-const Carrito = () => {
+const Carrito = () => { 
+    const {cart} = useCarroContext()
+    
+    // Calcular la cantidad total de artículos en el carrito
+    const totalItems = cart.length
+    
     return (
-        <div>
-            <img src={carritoDeCompras} alt="carrito-compras" />
-            0
+        <div className='img-carro'>
+            <img src={carritoDeCompras} alt="carrito-compras" /> 
+            <p>{totalItems}</p>
         </div>
     )
 }
