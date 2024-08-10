@@ -9,12 +9,15 @@ import ProductDetail from './component/detalleProducto/productDetail.jsx'
 import {CarroProvider} from './component/context/context.jsx'
 import CartView from './component/cartView/cartView.jsx'
 import Orders from './component/orders/orders.jsx'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <CarroProvider>
       <BrowserRouter>
         <BarraNav />
+        <ToastContainer/>
         <Routes>
           <Route path="/home" element={<Home />}/>
           <Route path="/productos" element={<ContenedorItemList />}/>

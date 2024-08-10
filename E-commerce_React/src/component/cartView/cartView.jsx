@@ -4,18 +4,13 @@ import { useCarroContext } from '../context/context';
 import { Link } from "react-router-dom"
 
 const CartView = () => {
-  const {cart,removeFromCart, productoOrden} = useCarroContext()
-  // const [show, setShow] = useState(true); // Estado para controlar la visibilidad
+  const {card,removeFromCart} = useCarroContext()
   
   // Calcular el total de los precios
-  const total = cart.reduce((acc, item) => acc + item.price * item.count, 0).toFixed(2);
-  
-  // if (!show) {
-  //   return null;
-  // }
+  const total = card.reduce((acc, item) => acc + item.price * item.count, 0).toFixed(2);
 
   return (
-    <div className="cartView-content" >
+    <div className="cartView-content">
       <h1>CARRITO DE COMPRAS</h1>
       <ul id='subtitle'>
         <li id='pro'>Producto</li>
@@ -25,7 +20,7 @@ const CartView = () => {
         <li>Precio total</li>
         <li>Eliminar</li>
       </ul>
-      {cart.map((item, index) => (
+      {card.map((item, index) => (
         <ul key={index} id='item'>
           <li><img src={item.image} alt={item.name}></img></li>
           <li><p>{item.name}</p></li>
@@ -38,7 +33,7 @@ const CartView = () => {
 
       <h3 id='total'>Total: ${total}</h3> 
       <Link to={'/carrito/compra'}>
-        <button id='fin-compra' >FINALIZAR COMPRA</button>
+        <button id='fin-compra'>FINALIZAR COMPRA</button>
       </Link>
     </div>
   );

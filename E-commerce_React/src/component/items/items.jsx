@@ -1,4 +1,4 @@
-import Cart from "../tarjeta/cart"
+import Card from "../tarjeta/card"
 import './items.css'
 
 const Items = ({productos}) =>{
@@ -6,7 +6,7 @@ const Items = ({productos}) =>{
     return(
         <div className="lista-productos">
             {productos.map(prod => (
-                <Cart key={prod.id} {...prod}/>
+                <Card key={prod.id} {...prod}/>
             ))}
         </div>
     )}

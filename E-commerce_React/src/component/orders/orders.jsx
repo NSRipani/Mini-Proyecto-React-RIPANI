@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import './orders.css'
 import { useCarroContext } from '../context/context';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {
     const { orderSave } = useCarroContext()
-
+    const negative = useNavigate()
+    const volver = () => {
+        negative('/carrito')
+    }
     const [data, setData] = useState({
         nombre: '', direccion: '', telefono: '',email:'',});
 
@@ -17,17 +21,17 @@ const Orders = () => {
         });
     }
 
+    // Confirmar compra
     const handleSubmit = (e) => {
         e.preventDefault();
 
         orderSave(data);
-
-        setData({nombre:'', direccion:'', telefono:'',email:''});
+        setData({nombre:'',direccion:'',telefono:'',email:''});
 
         // Muestra la alerta de SweetAlert
         Swal.fire({
             title: 'Formulario de compra',
-            text: `Felicitaciones ${data.nombre}! Logro su compra con exito...`,
+            text: `Felicitaciones ${data.nombre}! Logró su compra con exito...`,
             icon: 'success',
             customClass: {
                 title: 'sweetalert-title',
@@ -36,7 +40,9 @@ const Orders = () => {
             },
             background: '#333',
             color: '#fff', 
-            buttonsStyling: false
+            buttonsStyling: false,
+            timer: 3000,
+            timerProgressBar: true 
         });
     };
 
@@ -59,8 +65,11 @@ const Orders = () => {
                     <label>Email: </label>
                     <input type="email" name='email' value={data.email} onChange={handlecambio} required />
                 </div>
-                <button type="submit">Confirmar Compra</button>
+                <div className='button'>
+                    <button id='confirmar' type="submit">CONFIRMAR COMPRA</button>
+                </div>
             </form>
+            <button id='volver' onClick={volver}>VOLVER AL CARRITO</button>
         </div>
     );
 };
