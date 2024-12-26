@@ -8,11 +8,11 @@ import {getFirestore,collection, addDoc} from 'firebase/firestore'
 // };
 
 // Inicializar Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app)
+// const app = initializeApp(firebaseConfig);
+// const db = getFirestore(app)
 
 
-const orderCollection = collection(db,"order")
+// const orderCollection = collection(db,"order")
 const CarroContext = createContext();
 
 export const useCarroContext = () => useContext(CarroContext);
